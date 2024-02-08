@@ -1,0 +1,135 @@
+/* - Dark cyan: rgb(60, 128, 103)
+- Cream: rgb(242, 235, 227)
+- Very dark blue: rgb(28, 35, 43)
+- Dark grayish blue: rgb(108, 114, 137)
+- White: rgb(255, 255, 255) */
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(242, 235, 227);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+main {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(255, 255, 255);
+  border-radius: 12px;
+  height: 28rem;
+  width: 37rem;
+}
+.card-img {
+  height: 28rem;
+  width: 18.5rem;
+  overflow: clip;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+.card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card-details {
+  width: 18.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding-inline: 2rem;
+}
+.card-header {
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.42rem;
+  text-transform: uppercase;
+  align-self: flex-start;
+  color: rgb(108, 114, 137);
+}
+.card-title {
+  font-family: Fraunces;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1;
+  color: rgb(28, 35, 43);
+}
+.card-description {
+  color: rgb(108, 114, 137);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+.card-prices {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.card-price-new {
+  font-family: Fraunces;
+  font-size: 32px;
+  font-weight: 700;
+  color: rgb(60, 128, 103);
+}
+.card-price-old {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: line-through;
+  color: rgb(108, 114, 137);
+}
+button {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  color: rgb(255, 255, 255);
+  background-color: rgb(60, 128, 103);
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 700;
+  padding-block: 1rem;
+}
+.icon {
+  height: 1rem;
+  width: 1rem;
+}
+
+button:hover {
+  background-color: rgb(26, 64, 49);
+  cursor: pointer;
+}
+@media (max-width: 375px){
+    main {
+        flex-direction: column;
+        border-radius: 8px;
+        height: 38rem;
+        width: 21rem;
+    }     
+    .card-img {
+        height: 15rem;
+        width: 21rem;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        border-bottom-left-radius: 0;
+      }
+      .card-details {
+        height: 23rem;
+        width: 21rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        padding-inline: 1rem;
+      }
+}
